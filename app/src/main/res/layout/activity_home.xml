@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomeActivity">
+
+    <ImageButton
+        android:id="@+id/cropguide"
+        android:layout_width="159dp"
+        android:layout_height="138dp"
+        app:srcCompat="@drawable/cropguideicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="67dp"/>
+
+    <ImageButton
+        android:id="@+id/news"
+        android:layout_width="159dp"
+        android:layout_height="138dp"
+        app:srcCompat="@drawable/newsicon"
+        app:layout_constraintStart_toEndOf="@+id/cropguide"
+        app:layout_constraintTop_toTopOf="@+id/cropguide"
+        android:layout_marginStart="28dp"/>
+
+    <ImageButton
+        android:id="@+id/officer"
+        android:layout_width="159dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cropguide"
+        app:srcCompat="@drawable/officer" />
+
+
+    <ImageButton
+        android:id="@+id/sericulture"
+        android:layout_width="159dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toEndOf="@+id/officer"
+        app:layout_constraintTop_toBottomOf="@+id/news"
+        app:srcCompat="@drawable/sericultureicon" />
+
+    <ImageButton
+        android:id="@+id/soil"
+        android:layout_width="159dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/officer"
+        app:srcCompat="@drawable/soilicon" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="156dp"
+        android:layout_height="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toEndOf="@+id/soil"
+        app:layout_constraintTop_toBottomOf="@+id/sericulture"
+        app:layout_constraintVertical_bias="0.185"
+        app:srcCompat="@drawable/subsidyicon" />
+
+    <Button
+        android:id="@+id/cal_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expence Calculator"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soil"
+        android:backgroundTint="#00FFFF"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
